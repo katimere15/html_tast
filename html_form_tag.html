@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    <form name="폼 태그 이름" method="데이터 전송방식" action="데이터를 보낼 주소"></form>
+    -->
+
+    <h1>input태그의 type이 text이고 최대 입력가능 수는 12 </h1>
+    아이디 : <input type="text" name="userID" maxlength="12"/>
+
+    <br>
+
+    <h1>input태그의 type이 password이고 최대 입력가능 수는 12 </h1>
+    비밀번호 : <input type="password" name="userPw" maxlength="12"/>
+
+    <br>
+
+    <h1>input태그의 type이 checkbox - 중복 가능</h1>
+    음악감상 : <input type="checkbox" name="myHobby" value="music" checked/>
+    영화감상 : <input type="checkbox" name="myHobby" value="movie"/>
+    수집 : <input type="checkbox" name="myHobby" value="collection"/>
+
+    <br>
+
+    <h1>input태그의 type이 radio - 중복 불가능</h1>
+    음악감상 : <input type="radio" name="myHobby" value="music"/>
+    영화감상 : <input type="radio" name="myHobby" value="movie"/>
+    수집 : <input type="radio" name="myHobby" value="collection"/>
+
+    <br>
+
+    <h1>input태그의 type이 button</h1>
+    <input type="button" value="약관 보기"/>
+
+    <br>
+
+    <h1>input태그의 type이 file</h1>
+    <input type="file" value="attachedFile"/>
+
+    <br>
+
+    <h1>input태그의 type이 search</h1>
+    <input type="search" name="search"/>
+
+    <br>
+    
+    <h1>input태그의 type이 reset과 submit</h1>
+    <p>입력폼에 값을 입력하고 <b>다시 입력 버튼 or 완료</b>을 누르세요</p>
+    <form name="signUp" method="post" action="signup.php">
+        아이디 : <input type="text" name="userID" maxlength="12"/>
+        <input type="reset" value="다시 입력">
+        <input type="submit" value="완료">
+    </form>
+
+    <br>
+
+    <h1>input태그의 type이 email</h1>
+    <form name="signUp" method="post" action="signup.php">
+        email : <input type="email" name="email"/>
+        <input type="submit" value="완료"/>
+    </form>
+
+    <br>
+
+    <h1>input태그의 type이 url</h1>
+    <form name="signUp" method="post" action="signup.php">
+        url : <input type="url"/>
+        <input type="submit" value="완료"/>
+    </form>
+
+    <br>
+
+    <h1>input태그의 type이 number</h1>
+    <form name="signUp" method="post" action="signup.php">
+        <input type="number" pattern="\d*"/>
+        <input type="submit" value="완료"/>
+    </form>
+
+    <br>
+
+    <h1>input태그의 type이 color</h1>
+    <form name="signUp" method="post" action="signup.php">
+        <input type="color"/>
+    </form>
+
+    <br>
+
+    <h1>input태그의 type이 range</h1>
+    <form name="signUp" method="post" action="signup.php">
+        <input type="range" min="0" max="100" value="50" step="5"/>
+    </form>
+
+    <br>
+
+    <h1> placeholder의 활용</h1>
+    <input type="text" placeholder="아이디 입력">
+    
+    <br>
+
+    <h1>label태그 활용</h1>
+    <p>성별 선택</p>
+    <label for="man">남성</label>
+    <input type="radio" name="gender" value="m" id="man"/>
+    <label for="woman">여성</label>
+    <input type="radio" name="gender" value="w" id="woman"/>
+    
+    <br>
+
+    <h1>select태그 활용</h1>
+    <select name="birthMonth">
+        <option value="1">1월</option>
+        <option value="2">2월</option>
+        <option value="3">3월</option>
+        <option value="4">4월</option>
+        <option value="5">5월</option>
+        <option value="6">6월</option>
+        <option value="7">7월</option>
+        <option value="8">8월</option>
+        <option value="9">9월</option>
+        <option value="10">10월</option>
+        <option value="11">11월</option>
+        <option value="12">12월</option>
+    </select>
+</body>
+</html>

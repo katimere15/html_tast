@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        tr은 새로운 줄 생성 td는 새로운 칸 
+        table태그의 속성
+        align - 테이블 위치
+        bgcolor - 테이블 배경색
+        background - 태이블 배경그림 
+        border - 테이블 테두리의 두깨
+        bordercolor - 테이블 테두리의 색상
+        cellspacing - 셀과 셀의 간격
+        cellpadding - 셀 안의 내용과 여백 
+        height - 픽셀로 입력시 절대값 %단위로 입력시 웹브라우저 크기에 대한 상대값
+        width - 픽셀로 입력시 절대값 %단위로 입력시 웹브라우저 크기에 대한 상대값
+    -->
+    <table width="100%" bgcolor="skyblue" cellpadding="1">
+        <tr align="center" bgcolor="white"> <!--라인 생성-->
+            <td></td>
+            <td>월</td>
+            <td>화</td>
+            <td>수</td>
+            <td>목</td>
+            <td>금</td>
+        </tr>
+        <tr align="center" bgcolor="white">
+            <td>1교시</td>
+            <td>체육</td>
+            <td>물리</td>
+            <td>과학</td>
+            <td>영어</td>
+            <td>도덕</td>
+        </tr>
+        <tr align="center" bgcolor="white">
+            <td>2교시</td>
+            <td>일본어</td>
+            <td>과학</td>
+            <td>수학</td>
+            <td>국어</td>
+            <td>도덕</td>
+        </tr>
+        <tr align="center" bgcolor="white">
+            <td>3교시</td>
+            <td>국어</td>
+            <td>사회</td>
+            <td>영어</td>
+            <td>과학</td>
+            <td>도덕</td>
+        </tr>
+        <tr align="center" bgcolor="white">
+            <td>4교시</td>
+            <td>윤리</td>
+            <td>물리</td>
+            <td>사회</td>
+            <td>독일어</td>
+            <td>도덕</td>
+        </tr>
+    </table>
+<br><br><br><br>
+<section>
+    <h1>가로병합 colspan 활용</h1>
+<table width="200" bgcolor="skyblue" cellpadding="1">
+    <tr align="center" bgcolor="white">
+        <td colspan="3">
+            3칸 병합
+        </td>
+    </tr>
+    <tr align="center" bgcolor="white">
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+</table>
+</section>
+
+<section>
+    <h1>세로 병합 rowspan 활용</h1>
+<table width="200" bgcolor="skyblue" cellpadding="1">
+    <tr align="center" bgcolor="white" height="30">
+        <td rowspan="3" width="30%">
+            3줄 병합
+        </td>
+        <td>1</td>
+    </tr>
+    <tr align="center" bgcolor="white" height="30">  
+        <td>2</td>
+    </tr>
+    <tr align="center" bgcolor="white" height="30">  
+        <td>3</td>
+    </tr>
+</table>
+</section>
+
+
+</body>
+</html>
